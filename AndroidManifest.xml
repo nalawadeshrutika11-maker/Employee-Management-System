@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Login Activity - Launch Screen -->
+        <activity
+            android:name="com.example.employeemanagementsystem.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity - Home Screen -->
+        <activity
+            android:name="com.example.employeemanagementsystem.MainActivity"
+            android:exported="false" />
+
+        <!-- Add Employee Activity -->
+        <activity
+            android:name="com.example.employeemanagementsystem.AddEmployeeActivity"
+            android:exported="false"
+            android:parentActivityName="com.example.employeemanagementsystem.MainActivity" />
+
+        <!-- Search Employee Activity -->
+        <activity
+            android:name="com.example.employeemanagementsystem.SearchEmployeeActivity"
+            android:exported="false"
+            android:parentActivityName="com.example.employeemanagementsystem.MainActivity" />
+
+        <!-- View All Employees Activity -->
+        <activity
+            android:name="com.example.employeemanagementsystem.ViewAllEmployeesActivity"
+            android:exported="false"
+            android:parentActivityName="com.example.employeemanagementsystem.MainActivity" />
+
+        <!-- Update Employee Activity -->
+        <activity
+            android:name="com.example.employeemanagementsystem.UpdateEmployeeActivity"
+            android:exported="false"
+            android:parentActivityName="com.example.employeemanagementsystem.MainActivity" />
+    </application>
+
+</manifest>
