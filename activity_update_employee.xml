@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Employee"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etEmployeeId"
+            style="@style/EditTextStyle"
+            android:hint="@string/employee_id"
+            android:enabled="false"/>
+
+        <EditText
+            android:id="@+id/etName"
+            style="@style/EditTextStyle"
+            android:hint="@string/name"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/etAge"
+            style="@style/EditTextStyle"
+            android:hint="@string/age"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etDepartment"
+            style="@style/EditTextStyle"
+            android:hint="@string/department"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/etSalary"
+            style="@style/EditTextStyle"
+            android:hint="@string/salary"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            style="@style/ButtonStyle"
+            android:text="@string/update"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/ButtonStyle"
+            android:text="@string/delete"
+            android:backgroundTint="@color/error"/>
+    </LinearLayout>
+</ScrollView>
